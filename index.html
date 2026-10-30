@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tradevix</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1423565702713500');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1423565702713500&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- AUTO TELEGRAM REDIRECT -->
+<script>
+setTimeout(function(){
+window.location.href="https://t.me/+qY7iHkPjrX5hMTll";
+},10000);
+</script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--gold:#ffd76a;
+--blue:#159cff;
+--white:#ffffff;
+--muted:#c4cad8;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Sora',sans-serif;
+min-height:100vh;
+min-height:100svh;
+background:
+linear-gradient(135deg,rgba(3,7,18,.92),rgba(5,15,35,.88)),
+url('https://i.ibb.co/7x4vqZqd/image.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+padding:28px 14px;
+overflow-x:hidden;
+isolation:isolate;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(ellipse at 15% 15%,rgba(0,140,255,.17),transparent 40%),
+radial-gradient(ellipse at 85% 85%,rgba(255,195,55,.10),transparent 40%);
+pointer-events:none;
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+background-size:36px 36px;
+pointer-events:none;
+z-index:-1;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-7px);}
+}
+
+@keyframes glow{
+0%,100%{box-shadow:0 0 22px rgba(255,215,106,.15);}
+50%{box-shadow:0 0 35px rgba(255,215,106,.30);}
+}
+
+.card{
+position:relative;
+z-index:1;
+width:100%;
+max-width:440px;
+padding:38px 28px 28px;
+text-align:center;
+color:var(--white);
+background:linear-gradient(
+145deg,
+rgba(20,30,51,.91),
+rgba(7,13,27,.96)
+);
+border:1px solid rgba(255,215,106,.27);
+border-radius:28px;
+backdrop-filter:blur(22px);
+-webkit-backdrop-filter:blur(22px);
+box-shadow:
+0 30px 90px rgba(0,0,0,.55),
+inset 0 1px 0 rgba(255,255,255,.08);
+animation:fadeUp .85s ease both;
+}
+
+.card::before{
+content:"";
+position:absolute;
+top:0;
+left:12%;
+width:76%;
+height:1px;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,215,106,.8),
+transparent
+);
+}
+
+.logo{
+width:200px;
+height:200px;
+object-fit:cover;
+border-radius:50%;
+border:3px solid var(--gold);
+padding:4px;
+background:rgba(255,255,255,.04);
+box-shadow:
+0 0 0 7px rgba(255,215,106,.07),
+0 0 35px rgba(255,215,106,.20);
+margin-bottom:23px;
+animation:float 4s ease-in-out infinite;
+}
+
+h1{
+font-family:'Sora',sans-serif;
+font-size:25px;
+font-weight:800;
+letter-spacing:1.1px;
+line-height:1.4;
+color:var(--gold);
+margin-bottom:11px;
+text-shadow:0 2px 20px rgba(255,215,106,.13);
+}
+
+h2{
+font-family:'Sora',sans-serif;
+font-size:16px;
+font-weight:700;
+line-height:1.6;
+margin-bottom:12px;
+color:#fff;
+}
+
+.sub{
+font-family:'Poppins',sans-serif;
+font-size:12px;
+font-weight:500;
+letter-spacing:.4px;
+line-height:1.9;
+color:var(--muted);
+margin-bottom:27px;
+}
+
+.btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+width:100%;
+min-height:58px;
+padding:16px 18px;
+border-radius:15px;
+background:linear-gradient(110deg,#08b7ff,#0875f5 60%,#0754d8);
+border:1px solid rgba(255,255,255,.25);
+color:#fff;
+font-family:'Sora',sans-serif;
+font-weight:700;
+text-decoration:none;
+font-size:14px;
+line-height:1.5;
+box-shadow:
+0 10px 30px rgba(0,126,255,.26),
+inset 0 1px 0 rgba(255,255,255,.25);
+transition:transform .25s ease,box-shadow .25s ease;
+position:relative;
+overflow:hidden;
+}
+
+.btn::before{
+content:"";
+position:absolute;
+top:0;
+left:-130%;
+width:80%;
+height:100%;
+background:linear-gradient(
+110deg,
+transparent,
+rgba(255,255,255,.25),
+transparent
+);
+transform:skewX(-20deg);
+transition:left .65s ease;
+}
+
+.btn:hover::before{
+left:150%;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 16px 38px rgba(0,126,255,.42);
+}
+
+.btn:active{
+transform:scale(.98);
+}
+
+.badge{
+display:block;
+margin:23px 0;
+padding:12px 13px;
+border:1px solid rgba(255,215,106,.22);
+border-radius:12px;
+background:linear-gradient(
+135deg,
+rgba(255,215,106,.10),
+rgba(255,255,255,.035)
+);
+color:var(--gold);
+font-family:'Poppins',sans-serif;
+font-size:11px;
+font-weight:600;
+line-height:1.7;
+letter-spacing:.1px;
+animation:glow 4s ease-in-out infinite;
+}
+
+.points{
+list-style:none;
+margin:21px 0;
+padding:17px 15px;
+text-align:left;
+border-radius:15px;
+background:rgba(255,255,255,.035);
+border:1px solid rgba(255,255,255,.075);
+font-family:'Poppins',sans-serif;
+font-size:12px;
+font-weight:500;
+color:#e4eaf5;
+}
+
+.points li{
+display:flex;
+align-items:flex-start;
+gap:10px;
+margin:12px 0;
+line-height:1.7;
+}
+
+.points li:first-child{
+margin-top:0;
+}
+
+.points li:last-child{
+margin-bottom:0;
+}
+
+.risk{
+font-family:'Poppins',sans-serif;
+font-size:10px;
+font-weight:400;
+line-height:1.8;
+color:#aeb8c9;
+margin-top:16px;
+}
+
+.ads-tag{
+margin-top:23px;
+padding-top:18px;
+border-top:1px solid rgba(255,255,255,.10);
+font-family:'Poppins',sans-serif;
+font-size:11px;
+font-weight:500;
+color:#c2cada;
+line-height:1.8;
+}
+
+.ads-tag a{
+color:#36bdff;
+font-weight:700;
+text-decoration:none;
+transition:color .2s ease;
+}
+
+.ads-tag a:hover{
+color:#fff;
+}
+
+@media(max-width:480px){
+
+body{
+padding:20px 13px;
+}
+
+.card{
+padding:31px 20px 23px;
+border-radius:23px;
+}
+
+.logo{
+width:112px;
+height:112px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:21px;
+letter-spacing:.7px;
+}
+
+h2{
+font-size:14px;
+}
+
+.sub{
+font-size:11px;
+margin-bottom:23px;
+}
+
+.btn{
+min-height:55px;
+padding:14px 12px;
+font-size:12px;
+border-radius:13px;
+}
+
+.badge{
+font-size:10px;
+margin:20px 0;
+}
+
+.points{
+font-size:11px;
+padding:15px 12px;
+}
+
+.risk{
+font-size:9px;
+}
+
+.ads-tag{
+font-size:10px;
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+*,*::before,*::after{
+animation:none!important;
+transition:none!important;
+scroll-behavior:auto!important;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="https://i.postimg.cc/hvTygsPZ/Trade-With-Sunil-101.jpg" class="logo" alt="TRADEVIX OFFICIAL">
+
+<h1>TRADE WITH SUNlL</h1>
+<h2>🔥 DAILY MARKET UPDATES 🔥</h2>
+
+<p class="sub">
+NIFTY • BANKNIFTY • STOCK OPTIONS
+</p>
+
+<a href="https://t.me/+qY7iHkPjrX5hMTll" class="btn" onclick="fbq('track','Lead')">
+🚀 Join Free Telegram Channel
+</a>
+
+<div class="badge">
+🇮🇳 India’s Trusted Stock Market Channel
+</div>
+
+<ul class="points">
+<li>✔ Proper Stop Loss & Targets</li>
+<li>✔ Daily Market Updates Free</li>
+<li>✔ F&O Views for Study Purpose Only</li>
+</ul>
+
+<p class="risk">
+⚠️ Market Investments are subject to Market risks
+</p>
+
+
+</div>
+
+</body>
+</html>
+
